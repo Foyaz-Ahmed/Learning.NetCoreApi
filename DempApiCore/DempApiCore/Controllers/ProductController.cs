@@ -25,7 +25,7 @@ namespace DempApiCore.Controllers
             return Ok(products);
         }
 
-        [HttpGet("api/allProducts/{id}")]
+        [HttpGet("api/product/{id}")]
         public async Task<IActionResult> GetSingleProductById([FromRoute] int id)
         {
             var products = await _productRepository.GetProductsByIdAsync(id);
@@ -42,6 +42,14 @@ namespace DempApiCore.Controllers
 
             var id = await _productRepository.AddProducts(product);
             return CreatedAtAction(nameof(GetSingleProductById), new { id = id, controller = "product" }, id);
+        }
+        [HttpPut("api/product/{id}")]
+        public async Task<IActionResult> UpdateProduct ([FromBody] ProductsModel product, [FromRoute] int id)
+        {
+
+             await _productRepository.UpdateProductAsync(product, id);
+             return Ok();
+
         }
 
     }

@@ -59,7 +59,21 @@ namespace DempApiCore.Repository
             _context.Add(pd);
             await _context.SaveChangesAsync();
 
-            return product.Id;
+            return pd.Id;
+        }
+
+        public async Task UpdateProductAsync(ProductsModel product, int id)
+        {
+            var getProductbyId = await _context.Products.FindAsync(id);
+
+            if(getProductbyId != null)
+            {
+                getProductbyId.Name = product.Name;
+                getProductbyId.Title = product.Title;
+                getProductbyId.Description = product.Description;
+            }
+
+            await _context.SaveChangesAsync();
         }
     }
 }

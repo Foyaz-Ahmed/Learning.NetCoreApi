@@ -9,5 +9,6 @@ namespace DempApiCore.Repository.IRepository
         Task<List<ProductsModel>> GetProductsAsync();
         Task<ProductsModel> GetProductsByIdAsync(int id);
         Task<int> AddProducts(ProductsModel product);
+        Task UpdateProductAsync(ProductsModel product, int id);
     }
 }
