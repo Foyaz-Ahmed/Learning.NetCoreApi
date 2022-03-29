@@ -31,7 +31,7 @@ namespace DempApiCore
         {
             services.AddDbContext<DBContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("DB")));
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
            services.AddTransient<IProductRepository, ProductRepository>();
         }
 

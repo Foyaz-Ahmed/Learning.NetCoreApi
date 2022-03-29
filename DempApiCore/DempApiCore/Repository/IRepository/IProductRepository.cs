@@ -1,4 +1,5 @@
 ﻿using DempApiCore.Model;
+using Microsoft.AspNetCore.JsonPatch;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -10,5 +11,6 @@ namespace DempApiCore.Repository.IRepository
         Task<ProductsModel> GetProductsByIdAsync(int id);
         Task<int> AddProducts(ProductsModel product);
         Task UpdateProductAsync(ProductsModel product, int id);
+        Task UpdateProductPatchAsync(JsonPatchDocument product, int id); 
     }
 }

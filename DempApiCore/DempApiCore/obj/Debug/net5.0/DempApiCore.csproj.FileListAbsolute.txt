@@ -110,3 +110,6 @@ D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\ref\DempApiCore.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.pdb
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.genruntimeconfig.cache
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

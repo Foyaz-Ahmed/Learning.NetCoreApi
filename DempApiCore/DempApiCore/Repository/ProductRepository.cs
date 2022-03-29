@@ -2,6 +2,7 @@
 using DempApiCore.Data.Entitties;
 using DempApiCore.Model;
 using DempApiCore.Repository.IRepository;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -50,7 +51,7 @@ namespace DempApiCore.Repository
         {
             var pd = new Products()
             {
-                Id = product.Id,
+                //Id = product.Id,
                 Name = product.Name,
                 Description = product.Description,
                 Title = product.Title
@@ -64,13 +65,42 @@ namespace DempApiCore.Repository
 
         public async Task UpdateProductAsync(ProductsModel product, int id)
         {
-            var getProductbyId = await _context.Products.FindAsync(id);
+            //In this process database hits two times
 
-            if(getProductbyId != null)
+            //var getProductbyId = await _context.Products.FindAsync(id);
+
+            //if(getProductbyId != null)
+            //{
+            //    getProductbyId.Name = product.Name;
+            //    getProductbyId.Title = product.Title;
+            //    getProductbyId.Description = product.Description;
+            //}
+
+            //await _context.SaveChangesAsync();
+
+
+
+            //Another Process databse hits one time
+
+            var pd = new Products()
             {
-                getProductbyId.Name = product.Name;
-                getProductbyId.Title = product.Title;
-                getProductbyId.Description = product.Description;
+                Id = id,
+                Name = product.Name,
+                Description = product.Description,
+                Title = product.Title
+            };
+
+            _context.Update(pd);
+            await _context.SaveChangesAsync();
+        }
+        public async Task UpdateProductPatchAsync(JsonPatchDocument product, int id)
+        {
+            var productById = await _context.Products.FindAsync(id);
+
+            if (productById != null)
+            {
+                product.ApplyTo(productById);
+                await _context.SaveChangesAsync();
             }
 
             await _context.SaveChangesAsync();
