@@ -1,4 +1,5 @@
-﻿using DempApiCore.Data;
+﻿using AutoMapper;
+using DempApiCore.Data;
 using DempApiCore.Data.Entitties;
 using DempApiCore.Model;
 using DempApiCore.Repository.IRepository;
@@ -14,37 +15,50 @@ namespace DempApiCore.Repository
     public class ProductRepository: IProductRepository
     {
         private readonly DBContext _context;
+        private readonly IMapper _mapper;
 
-        public ProductRepository(DBContext context)
+        public ProductRepository(DBContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         public async Task<List<ProductsModel>> GetProductsAsync()
         {
-            var records = await _context.Products.Select(x => new ProductsModel()
-            {
+            //var records = await _context.Products.Select(x => new ProductsModel()
+            //{
 
-                Id = x.Id,
-                Name = x.Name,
-                Description = x.Description,
-                Title = x.Title
-            }).ToListAsync();
+            //    Id = x.Id,
+            //    Name = x.Name,
+            //    Description = x.Description,
+            //    Title = x.Title
+            //}).ToListAsync();
 
-            return records;
+            //return records;
+
+            var records = await _context.Products.ToListAsync();
+            return _mapper.Map<List<ProductsModel>>(records);
         }
 
         public async Task<ProductsModel> GetProductsByIdAsync(int productId)
         {
-            var records = await _context.Products.Where(x=> x.Id == productId).Select(x => new ProductsModel
-            {
+            //var records = await _context.Products.Where(x => x.Id == productId).Select(x => new ProductsModel
+            //{
 
-                Id = x.Id,
-                Name = x.Name,
-                Description = x.Description,
-                Title = x.Title
-            }).FirstOrDefaultAsync();
+            //    Id = x.Id,
+            //    Name = x.Name,
+            //    Description = x.Description,
+            //    Title = x.Title
+            //}).FirstOrDefaultAsync();
 
-            return records;
+            //return records;
+
+
+            //using auto mapper;
+
+            var product = await _context.Products.FindAsync(productId);
+
+            return _mapper.Map<ProductsModel>(product);
+
         }
 
         public async Task<int> AddProducts(ProductsModel product)

@@ -1,4 +1,7 @@
+//using AutoMapper;
+using AutoMapper;
 using DempApiCore.Data;
+using DempApiCore.Helper;
 using DempApiCore.Repository;
 using DempApiCore.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
@@ -32,7 +35,16 @@ namespace DempApiCore
             services.AddDbContext<DBContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("DB")));
             services.AddControllers().AddNewtonsoftJson();
-           services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+
+            var config = new AutoMapper.MapperConfiguration(options => {
+
+                options.AddProfile(new ProductMapper());
+            });
+            var mapper = config.CreateMapper();
+            services.AddSingleton(mapper);
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

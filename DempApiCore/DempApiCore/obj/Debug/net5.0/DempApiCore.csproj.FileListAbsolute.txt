@@ -63,7 +63,11 @@ D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\DempApiCore.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\ref\DempApiCore.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\DempApiCore.pdb
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\AutoMapper.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Humanizer.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -71,6 +75,9 @@ D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
@@ -78,10 +85,12 @@ D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -95,7 +104,6 @@ D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.csproj.AssemblyReference.cache
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.GeneratedMSBuildEditorConfig.editorconfig
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.AssemblyInfoInputs.cache
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.AssemblyInfo.cs
@@ -110,6 +118,3 @@ D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\ref\DempApiCore.dll
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.pdb
 D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\obj\Debug\net5.0\DempApiCore.genruntimeconfig.cache
-D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
-D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-D:\Learning.NetCoreApi\Learning.NetCoreApi\DempApiCore\DempApiCore\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
