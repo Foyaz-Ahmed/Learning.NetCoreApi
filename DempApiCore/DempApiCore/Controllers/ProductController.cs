@@ -64,5 +64,14 @@ namespace DempApiCore.Controllers
 
         }
 
+        [HttpDelete("api/product/{id}")]
+        public async Task<IActionResult> DeleteProductAsync([FromRoute] int id)
+        {
+
+            await _productRepository.ProductDeleteAsync(id);
+            return Ok();
+
+        }
+
     }
 }

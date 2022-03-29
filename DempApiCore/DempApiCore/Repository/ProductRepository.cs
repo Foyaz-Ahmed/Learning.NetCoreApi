@@ -51,13 +51,12 @@ namespace DempApiCore.Repository
         {
             var pd = new Products()
             {
-                //Id = product.Id,
                 Name = product.Name,
                 Description = product.Description,
                 Title = product.Title
             };
 
-            _context.Add(pd);
+            _context.Products.Add(pd);
             await _context.SaveChangesAsync();
 
             return pd.Id;
@@ -80,7 +79,7 @@ namespace DempApiCore.Repository
 
 
 
-            //Another Process databse hits one time
+            //Another Process databse hits one time(More Preferable)
 
             var pd = new Products()
             {
@@ -103,6 +102,22 @@ namespace DempApiCore.Repository
                 await _context.SaveChangesAsync();
             }
 
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task ProductDeleteAsync(int productId)
+        {
+            //if Don't have primary key
+            // var pd = _context.Products.Where(x => x.Title == "").FirstOrDefault();
+
+            //if Have then
+
+            var pd = new Products()
+            {
+                Id = productId
+            };
+
+            _context.Products.Remove(pd);
             await _context.SaveChangesAsync();
         }
     }
